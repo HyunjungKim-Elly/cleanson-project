@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+@media screen and (max-width:380px) {
+  /* 공통 */
+  html body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  p, h4, a {
+    font-family: 'Noto Sans KR';
+    font-size: 11pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.87;
+    letter-spacing: normal;
+    text-align: left;
+    text-decoration: none;
+    color: #333333;
+  }
+  #wrap {
+    overflow: hidden;
+/*     min-width: 1190px; */
+  }
+  header .container, main .container {
+    position: relative;
+    width: 1190px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 70px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    /* vertical-align: middle; */
+    object-fit: contain;
+  }
+  .menu-icon {
+    width: 24px;
+    height: 19px;
+    object-fit: contain;
+  } 
+  .main-banner, #main_banner{
+    width: 375px;
+    height: 270px;
+    object-fit: contain;
+  }
+  main #main_nav{
+    display: flex;
+    flex-direction: row;
+    width: 375px;
+  }
+  main .menu-box {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+  .menu-box > h4 {
+    font-family: 'Noto Sans KR';
+    font-size: 1em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0075c5;
+  }
+  .wr-content {
+    width: 328px;
+    height: 200px;
+    margin: 0;
+    padding: 20px 20px 0px 20px;
+  }
+.download-area {
+  width: 335px;
+  height: 56px;
+  border: solid 1px #b1b1b1;
+  background-color: #ffffff;
+}
+.download-icon {
+  width: 24px;
+  height: 24px;
+}
+.wr-content > p {
+    margin: 0;
+  }
+}
