@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import 'normalize.css';
+@media screen and (max-width:414px) {
+  /* common */
+  html body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+  }
+  p, h4, a {
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.87;
+    letter-spacing: normal;
+    text-align: left;
+    text-decoration: none;
+    color: #333333;
+  }
+  /* media */
+  #wrap {
+    margin-bottom: 30px;
+    overflow: hidden;
+/*     min-width: 1190px; */
+  }
+  /* header */
+  header .container, main .container {
+    position: relative;
+    width: 375px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  main #main_nav{
+    display: flex;
+    flex-direction: row;
+    width: 375px;
+  }
+
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logo-area {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .logo {
+    position: relative;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    /* vertical-align: middle; */
+    object-fit: contain;
+  }
+  .nav-menu {
+    position: relative;
+    right: 20px;
+  }
+  .menu-icon {
+    position: relative;
+    top: 25px;
+/*     right: 25px; */
+    width: 24px;
+    height: 19px;
+    object-fit: contain;
+  } 
+
+  #main_banner {
+    position: relative;
+    background-image: url(../img/main-banner-1@3x.png);
+    width: 100%;
+    height: 270px;
+    background-size: cover;
+  }
+  #main_banner #banner_content > #text_node > h1{
+    position: absolute;
+    width: 100%;
+    top:36%;
+    left:50%;
+    transform: translate(-50%, -50%);  
+    margin: 0;     
+    font-family: TmonMonsori, sans-serif;                                                            
+    font-size: 3em;
+    color: #02b15f;
+    z-index: 2;
+    text-align: center;
+  }
+  #main_banner #banner_content > #text_node > h2{
+    position: absolute;
+    width: 100%;
+    top:18%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    margin: 0;  
+    font-family: TmonMonsori, sans-serif;     
+    font-size: 2em;
+    color: #ec4d2a;
+    z-index: 2;
+    text-align: center;
+  } 
+  #main_banner #banner_content > #text_node > h3{
+    position: absolute;
+    width: 100%;
+    top: 28%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    margin: 0;  
+    font-family: TmonMonsori, sans-serif; 
+    font-size: 2em;
+    color: #ec4d2a;
+    z-index: 2;
+    text-align: center;
+  }  
+  #main_banner #banner_content > #text_node > h5{
+    position: absolute;
+    width: 100%;
+    top:15%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    margin: 0;  
+    font-size: 1.3em;
+    z-index: 2;
+    text-align: center;
+  }  
+  main .menu-box {
+    display: flex;
+    flex: 1;
+    height: 50px;
+    justify-content: space-around;
+    background-color: #0075c5;
+  }
+  .menu-box > a > h4 {
+    margin: 0 auto;
+    padding: 12.5px;
+    font-family: 'Noto Sans KR';
+    font-size: 1em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+  }
+  #wr_content {
+    /* width: 100%; */
+    height: 200px;
+    padding: 15px 20px;
+  }
+  #wr_content > p {
+    margin: 0;
+  }
+  .download-area {
+    width: 335px;
+    height: 56px;
+    margin: 0 auto;
+    border: solid 1px #b1b1b1;
+    background-color: #ffffff;
+  }
+  .download-area > .download-box > a > h4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+  }
+  .download-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .wr-content > p {
+      margin: 0;
+  }
+
+  /* menu_02 */
+  .cleanson-title {
+    padding: 30px 20px;
+  }
+  .cleanson-title > span {
+    font-size: 18px;
+    font-weight: bold
+  }
+  #cleanson_step > ul {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  #cleanson_step > ul > li {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 19px;
+    text-decoration: none;
+  }
+  #circle {
+    transform: translate(100%, 0%);  
+    width:24px;
+    height:24px;
+    background-color: #0075c5;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+  }
+  .cleanson-num {
+    width: 100px;
+    height: 100px;
+    padding-right: 14px;
+    object-fit: contain;
+  }
+  
+  /* menu_03 */
+  .sticker {
+    padding-bottom: 20px;
+  }
+  .square {
+    width: 335px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #30ade2;
+    font-size: 15px;
+    color: white
+  }
+  .square > strong {
+    position: absolute;
+    padding: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .square > p {
+    position: relative;
+    margin: 0;
+    padding: 12px;
+    top: 30%;
+    color: white
+  }
+  #donation_box {
+    width: 335px;
+    height: 42px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+  }
+  #donation_box > p {
+    position: relative;
+    top: 15%;
+    margin: 0;
+    text-align: center;
+    color: #333333
+  }
+  .infobox {
+    display: flex;
+    width: 335px;
+    margin: 0 auto;
+    padding-bottom: 20px; 
+    align-items: center;
+  }
+  .info-link  {
+   padding-left: 8px;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+}

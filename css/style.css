@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import 'normalize.css';
+
+@font-face {
+  font-family: TmonMonsori;
+  src: local(TmonMonsori),
+       url(../font/TmonMonsori.ttf) format('truetype');
+}
+*, *::before, *::after {box-sizing: border-box;}
+
+/* common */
+#wrap {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+header .container, main .container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+main #main_nav{
+  display: flex;
+  flex-direction: row;
+}
+html {
+  margin: 0;
+  padding-top: 70px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+p, h4 {
+  font-size: 15px;
+  line-height: 1.87;
+  text-decoration: none;
+  color: #333333;
+}
+a, span {
+  font-size: 15px;
+  text-decoration: none;
+}
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+header .navbar {
+  display: flex;
+  height: 70px;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding-right: 10px;
+  object-fit: contain;
+}
+.nav-menu {
+  position: relative;
+  right: 20px;
+}
+.menu-icon {
+  position: relative;
+  top: 25px;
+  width: 24px;
+  height: 19px;
+  object-fit: contain;
+}
+#main_banner {
+  position: relative;
+  padding-bottom: 70%;
+  background-image: url(../img/main-banner-1@3x.png);
+  background-size: cover;
+}
+#banner_text_node > h1{
+  position: absolute;
+  top:36%;
+  left:50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0;
+  font-family: TmonMonsori, sans-serif;
+  font-size: 3em;
+  color: #02b15f;
+  text-align: center;
+}
+#banner_text_node > h2{
+  position: absolute;
+  top:18%;
+  left:50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0;
+  font-family: TmonMonsori, sans-serif;
+  font-size: 2em;
+  color: #ec4d2a;
+  text-align: center;
+}
+#banner_text_node > h3{
+  position: absolute;
+  top: 28%;
+  left:50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0;
+  font-family: TmonMonsori, sans-serif;
+  font-size: 2em;
+  color: #ec4d2a;
+  text-align: center;
+}
+#banner_text_node > h5{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0;
+  font-size: 1.3em;
+  text-align: center;
+}
+main .menu-box {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  background-color: #0075c5;
+}
+.menu-box > a {
+  margin: 0 auto;
+  padding: 12.5px;
+  color: white;
+  text-decoration: none;
+}
+.on {
+  background-color: white !important;
+}
+.on > a {
+  color: #0075c5;
+}
+#wr_content {
+  padding: 15px 20px;
+}
+#wr_content > p {
+  margin: 0;
+}
+.download-area {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.download-box {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  margin: 0 auto;
+  border: solid 1px #b1b1b1;
+}
+.download-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+#link_text {
+  flex: 5;
+  color: #333333;
+}
+#link_icon {
+  flex: 1;
+  flex-direction: row-reverse;
+}
+.download-icon {
+  width: 24px;
+  height: 24px;
+}
+.wr-content > p {
+  margin: 0;
+}
+
+/* menu_02 */
+.cleanson-title {
+  padding: 30px 20px;
+}
+.cleanson-title > span {
+  font-size: 18px;
+  font-weight: bold
+}
+#cleanson_step > ul {
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-decoration: none;
+  list-style: none;
+}
+#cleanson_step > ul > li {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 19px;
+  text-decoration: none;
+}
+.icon-box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 14px;
+}
+.circle {
+  position: absolute;
+  top: 0;
+  width:24px;
+  height:24px;
+  background-color: #0075c5;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+}
+.cleanson-num {
+  height: 100px;
+}
+
+/* menu_03 */
+.sticker {
+  padding: 0 20px;
+}
+.sticker:nth-of-type(2) { margin-top: 10px; }
+.square {
+  height: 80px;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: #30ade2;
+  font-size: 15px;
+  color: white
+}
+.square > .sticker-title {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 13px;
+}
+#donation_box {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #f3f3f3;
+}
+#donation_box > div {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: #333333;
+  line-height: 1.5;
+}
+#cleanson_infobox {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  margin: 0 auto;
+  padding: 20px;
+}
+.infobox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.infobox > .icon {
+  flex: 0;
+}
+.infobox > a {
+  flex: 5;
+  padding-left: 8px;
+  color: #333333
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+@media all and (min-width:600px) {
+  #banner_text_node > h1{
+    font-size: 4em;
+  }
+  #banner_text_node > h2{
+    font-size: 3em;
+  }
+  #banner_text_node > h3{
+    font-size: 3em;
+  }
+  #banner_text_node > h5{
+    font-size: 2em;
+  }
+  #cleanson_step > ul {
+    padding: 10px 80px;
+  }
+  .cleanson-title {
+    text-align: center;
+  }
+  .icon-box {
+    margin-right: 65px;
+  }
+}
