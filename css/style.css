@@ -162,7 +162,7 @@ main .menu-box {
   color: #0075c5;
 }
 #wr_content {
-  padding: 15px 20px;
+  padding: 30px 20px 15px;
 }
 #wr_content > p {
   margin: 0;
@@ -229,8 +229,8 @@ main .menu-box {
 .circle {
   position: absolute;
   top: 0;
-  width:24px;
-  height:24px;
+  width: 24px;
+  height: 24px;
   background-color: #0075c5;
   border-radius: 50px;
   text-align: center;
@@ -284,11 +284,7 @@ main .menu-box {
   width: 100%;
   padding-top: 20px;
 }
-.infobox > .icon {
-  flex: 0;
-}
 .infobox > a {
-  flex: 5;
   padding-left: 8px;
   color: #333333
 }
